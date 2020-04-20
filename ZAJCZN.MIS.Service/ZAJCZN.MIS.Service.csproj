@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8837FA6-E2E5-471A-804D-50C4F7C38D70}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZAJCZN.MIS.Service</RootNamespace>
+    <AssemblyName>ZAJCZN.MIS.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\Libs\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\Libs\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseService.cs" />
+    <Compile Include="Contract\IServiceContractInfo.cs" />
+    <Compile Include="Contract\IServiceContractOrderInfo.cs" />
+    <Compile Include="Contract\IServiceReceivablesInfo.cs" />
+    <Compile Include="Contract\IServiceContractOrderCostInfo.cs" />
+    <Compile Include="Contract\IServiceContractCabinetInfo.cs" />
+    <Compile Include="Contract\IServiceContractDoorInfo.cs" />
+    <Compile Include="Contract\IServiceContractHandWareDetail.cs" />
+    <Compile Include="Contract\IServiceContractFiles.cs" />
+    <Compile Include="Contract\IServiceContractCostInfo.cs" />
+    <Compile Include="Contract\IServiceContractPayInfo.cs" />
+    <Compile Include="Equipment\IServiceEquipmentInfo.cs" />
+    <Compile Include="Equipment\IServiceEquipmentTypeInfo.cs" />
+    <Compile Include="Inventory\IServiceGoodsAllocationBill.cs" />
+    <Compile Include="Inventory\IServiceGoodsAllocationBillDetail.cs" />
+    <Compile Include="Inventory\IServiceLossOrder.cs" />
+    <Compile Include="Inventory\IServiceLossOrderDetail.cs" />
+    <Compile Include="Inventory\IServiceReceiveOrder.cs" />
+    <Compile Include="Inventory\IServiceReceiveOrderDetail.cs" />
+    <Compile Include="Inventory\IServiceSalePayInfo.cs" />
+    <Compile Include="Inventory\IServiceWHStorageOrder.cs" />
+    <Compile Include="Inventory\IServiceWHOutBoundOrder.cs" />
+    <Compile Include="Inventory\IServiceWHGoodsDetail.cs" />
+    <Compile Include="Inventory\IServiceWHGoodsJournalAccount.cs" />
+    <Compile Include="Inventory\IServiceWHOrderGoodsDetail.cs" />
+    <Compile Include="Inventory\IServiceGoodsOrder.cs" />
+    <Compile Include="Inventory\IServiceGoodsOrderDetail.cs" />
+    <Compile Include="Contract\IServiceContractOrderDetail.cs" />
+    <Compile Include="Equipment\IServicePartsInfo.cs" />
+    <Compile Include="Equipment\IServicePartsTypeInfo.cs" />
+    <Compile Include="IServiceMemberSiteMessage.cs" />
+    <Compile Include="SysSet\IServiceEmployeeInfo.cs" />
+    <Compile Include="SysSet\IServiceSupplierInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Equipment\IServiceWareHouse.cs" />
+    <Compile Include="SysSet\IServiceEnums.cs" />
+    <Compile Include="StockSet\IServiceGoodsType.cs" />
+    <Compile Include="StockSet\IServiceGoods.cs" />
+    <Compile Include="SysSet\IServiceSysParams.cs" />
+    <Compile Include="SysSet\IServiceRepairProjectInfo.cs" />
+    <Compile Include="System\IServiceConfigs.cs" />
+    <Compile Include="System\IServiceDepts.cs" />
+    <Compile Include="System\IServiceUsers.cs" />
+    <Compile Include="System\IServiceMenus.cs" />
+    <Compile Include="System\IServicePowers.cs" />
+    <Compile Include="System\IServiceRoles.cs" />
+    <Compile Include="System\IServiceOnlines.cs" />
+    <Compile Include="System\IServiceRoleUsers.cs" />
+    <Compile Include="System\IServiceRolePowers.cs" />
+    <Compile Include="System\IServiceVipInfo.cs" />
+    <Compile Include="System\IServiceVIPPrepaid.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZAJCZN.MIS.Domain\ZAJCZN.MIS.Domain.csproj">
+      <Project>{824b2a24-fa56-4281-877f-1d6b921f8f22}</Project>
+      <Name>ZAJCZN.MIS.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SysSet\IServiceEnumTypes.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

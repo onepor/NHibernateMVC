@@ -1,0 +1,53 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<configuration>
+  <components>
+    <!--系统设置-->
+    <component name='在线人数' id='OnlinesService' service='ZAJCZN.MIS.Service.IServiceOnlines,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentOnlines,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='角色管理' id='RolesService' service='ZAJCZN.MIS.Service.IServiceRoles,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentRoles,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='角色用户管理' id='RoleUsersService' service='ZAJCZN.MIS.Service.IServiceRoleUsers,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentRoleUsers,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='角色权限管理' id='RolePowersService' service='ZAJCZN.MIS.Service.IServiceRolePowers,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentRolePowers,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='权限管理' id='PowersService' service='ZAJCZN.MIS.Service.IServicePowers,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentPowers,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='菜单管理' id='MenusService' service='ZAJCZN.MIS.Service.IServiceMenus,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentMenus,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='用户管理' id='UsersService' service='ZAJCZN.MIS.Service.IServiceUsers,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentUsers,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='部门管理' id='DeptsService' service='ZAJCZN.MIS.Service.IServiceDepts,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentDepts,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='系统设置管理' id='ConfigsService' service='ZAJCZN.MIS.Service.IServiceConfigs,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentConfigs,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='枚举管理' id='EnumsService' service='ZAJCZN.MIS.Service.IServiceEnums,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentEnums,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='枚举类别管理' id='EnumTypesService' service='ZAJCZN.MIS.Service.IServiceEnumTypes,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentEnumTypes,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='通用参数管理' id='SysParamsService' service='ZAJCZN.MIS.Service.IServiceSysParams,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentSysParams,ZAJCZN.MIS.Component' isTransactional='true' />
+    <!--物品管理-->
+    <component name='物品类别管理' id='EquipmentTypeInfoService' service='ZAJCZN.MIS.Service.IServiceEquipmentTypeInfo,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentEquipmentTypeInfo,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='物品管理' id='EquipmentInfoService' service='ZAJCZN.MIS.Service.IServiceEquipmentInfo,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentEquipmentInfo,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='进货单管理' id='GoodsOrderService' service='ZAJCZN.MIS.Service.IServiceGoodsOrder,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentGoodsOrder,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='进货单明细管理' id='GoodsOrderDetailService' service='ZAJCZN.MIS.Service.IServiceGoodsOrderDetail,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentGoodsOrderDetail,ZAJCZN.MIS.Component' isTransactional='true' />
+    <!--基础信息管理-->
+    <component name='供应商信息管理' id='SupplierInfoService' service='ZAJCZN.MIS.Service.IServiceSupplierInfo,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentSupplierInfo,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='员工信息管理' id='EmployeeInfoService' service='ZAJCZN.MIS.Service.IServiceEmployeeInfo,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentEmployeeInfo,ZAJCZN.MIS.Component' isTransactional='true' />
+    <!--合同管理-->
+    <component name='合同信息管理' id='ContractInfoService' service='ZAJCZN.MIS.Service.IServiceContractInfo,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentContractInfo,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='订单柜体管理' id='ContractCabinetInfoService' service='ZAJCZN.MIS.Service.IServiceContractCabinetInfo,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentContractCabinetInfo,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='订单门管理' id='ContractDoorInfoService' service='ZAJCZN.MIS.Service.IServiceContractDoorInfo,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentContractDoorInfo,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='订单配套五金管理' id='ContractHandWareService' service='ZAJCZN.MIS.Service.IServiceContractHandWareDetail,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentContractHandWareDetail,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='订单相关附件管理' id='ContractFilesService' service='ZAJCZN.MIS.Service.IServiceContractFiles,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentContractFiles,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='订单相关成本管理' id='ContractCostInfoService' service='ZAJCZN.MIS.Service.IServiceContractCostInfo,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentContractCostInfo,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='订单收付款管理' id='ContractPayInfoService' service='ZAJCZN.MIS.Service.IServiceContractPayInfo,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentContractPayInfo,ZAJCZN.MIS.Component' isTransactional='true' />
+    <!--财务管理-->
+    <component name='回款信息管理' id='ReceivablesInfoService' service='ZAJCZN.MIS.Service.IServiceReceivablesInfo,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentReceivablesInfo,ZAJCZN.MIS.Component' isTransactional='true' />
+    <!--库存管理-->
+    <component name='库房管理'  id='WareHouseService' service='ZAJCZN.MIS.Service.IServiceWareHouse,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentWareHouse,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='入库单信息管理' id='WHStorageOrderService' service='ZAJCZN.MIS.Service.IServiceWHStorageOrder,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentWHStorageOrder,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='出库单信息管理' id='WHOutBoundOrderService' service='ZAJCZN.MIS.Service.IServiceWHOutBoundOrder,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentWHOutBoundOrder,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='出入库单明细管理' id='WHGoodsDetailService' service='ZAJCZN.MIS.Service.IServiceWHGoodsDetail,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentWHGoodsDetail,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='库存物品明细流水管理' id='WHGoodsJournalAccountService' service='ZAJCZN.MIS.Service.IServiceWHGoodsJournalAccount,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentWHGoodsJournalAccount,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='库存物品明细管理' id='WHOrderGoodsDetailService' service='ZAJCZN.MIS.Service.IServiceWHOrderGoodsDetail,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentWHOrderGoodsDetail,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='领用单信息管理' id='ReceiveOrderDetailService' service='ZAJCZN.MIS.Service.IServiceReceiveOrderDetail,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentReceiveOrderDetail,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='领用单明细管理' id='ReceiveOrderService' service='ZAJCZN.MIS.Service.IServiceReceiveOrder,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentReceiveOrder,ZAJCZN.MIS.Component' isTransactional='true' />-->
+    <component name='损耗单信息管理' id='LossOrderService' service='ZAJCZN.MIS.Service.IServiceLossOrder,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentLossOrder,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='损耗单信息管理' id='LossOrderDetailService' service='ZAJCZN.MIS.Service.IServiceLossOrderDetail,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentLossOrderDetail,ZAJCZN.MIS.Component' isTransactional='true' />
+    <component name='配件类别管理' id='PartsTypeInfoService' service='ZAJCZN.MIS.Service.IServicePartsTypeInfo,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentPartsTypeInfo,ZAJCZN.MIS.Component' isTransactional='true' />
+    
+    <component name='配件管理' id='PartsInfoService' service='ZAJCZN.MIS.Service.IServicePartsInfo,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentPartsInfo,ZAJCZN.MIS.Component' isTransactional='true' />
+
+    <component name='站内信管理' id='SiteMessageService' service='ZAJCZN.MIS.Service.IServiceMemberSiteMessage,ZAJCZN.MIS.Service' type='ZAJCZN.MIS.Component.ComponentMemberSiteMessage,ZAJCZN.MIS.Component' isTransactional='true' />
+
+  </components>
+</configuration>

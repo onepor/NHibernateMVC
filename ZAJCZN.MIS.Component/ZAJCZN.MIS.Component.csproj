@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5FB8CAC-3102-4968-A6B5-4908FBFCE3A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZAJCZN.MIS.Component</RootNamespace>
+    <AssemblyName>ZAJCZN.MIS.Component</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\Libs\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\Libs\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseComponent.cs" />
+    <Compile Include="ComponentMemberSiteMessage.cs" />
+    <Compile Include="Contract\ComponentContractInfo.cs" />
+    <Compile Include="Contract\ComponentContractOrderInfo.cs" />
+    <Compile Include="Contract\ComponentReceivablesInfo.cs" />
+    <Compile Include="Contract\ComponentContractOrderCostInfo.cs" />
+    <Compile Include="Contract\ComponentContractCabinetInfo.cs" />
+    <Compile Include="Contract\ComponentContractDoorInfo.cs" />
+    <Compile Include="Contract\ComponentContractHandWareDetail.cs" />
+    <Compile Include="Contract\ComponentContractFiles.cs" />
+    <Compile Include="Contract\ComponentContractCostInfo.cs" />
+    <Compile Include="Contract\ComponentContractPayInfo.cs" />
+    <Compile Include="Equipment\ComponentPartsInfo.cs" />
+    <Compile Include="Equipment\ComponentPartsTypeInfo.cs" />
+    <Compile Include="SysSet\ComponentEmployeeInfo.cs" />
+    <Compile Include="SysSet\ComponentSupplierInfo.cs" />
+    <Compile Include="Equipment\ComponentEquipmentInfo.cs" />
+    <Compile Include="Equipment\ComponentEquipmentTypeInfo.cs" />
+    <Compile Include="Inventory\ComponentGoodsAllocationBill.cs" />
+    <Compile Include="Inventory\ComponentGoodsAllocationBillDetail.cs" />
+    <Compile Include="Inventory\ComponentLossOrder.cs" />
+    <Compile Include="Inventory\ComponentLossOrderDetail.cs" />
+    <Compile Include="Inventory\ComponentReceiveOrder.cs" />
+    <Compile Include="Inventory\ComponentReceiveOrderDetail.cs" />
+    <Compile Include="Inventory\ComponentWHGoodsDetail.cs" />
+    <Compile Include="Inventory\ComponentWHStorageOrder.cs" />
+    <Compile Include="Inventory\ComponentWHOutBoundOrder.cs" />
+    <Compile Include="Inventory\ComponentWHGoodsJournalAccount.cs" />
+    <Compile Include="Inventory\ComponentWHOrderGoodsDetail.cs" />
+    <Compile Include="Inventory\ComponentGoodsOrder.cs" />
+    <Compile Include="Inventory\ComponentGoodsOrderDetail.cs" />
+    <Compile Include="Contract\ComponentContractOrderDetail.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Equipment\ComponentWareHouse.cs" />
+    <Compile Include="SysSet\ComponentEnumTypes.cs" />
+    <Compile Include="StockSet\ComponentGoodsType.cs" />
+    <Compile Include="StockSet\ComponentGoods.cs" />
+    <Compile Include="SysSet\ComponentSysParams.cs" />
+    <Compile Include="SysSet\ComponentRepairProjectInfo.cs" />
+    <Compile Include="System\ComponentConfigs.cs" />
+    <Compile Include="System\ComponentDepts.cs" />
+    <Compile Include="System\ComponentUsers.cs" />
+    <Compile Include="System\ComponentMenus.cs" />
+    <Compile Include="System\ComponentPowers.cs" />
+    <Compile Include="System\ComponentRoles.cs" />
+    <Compile Include="System\ComponentOnlines.cs" />
+    <Compile Include="System\ComponentRoleUsers.cs" />
+    <Compile Include="System\ComponentRolePowers.cs" />
+    <Compile Include="System\ComponentVipInfo.cs" />
+    <Compile Include="System\ComponentVIPPrepaid.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZAJCZN.MIS.Domain\ZAJCZN.MIS.Domain.csproj">
+      <Project>{824b2a24-fa56-4281-877f-1d6b921f8f22}</Project>
+      <Name>ZAJCZN.MIS.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZAJCZN.MIS.Manager\ZAJCZN.MIS.Manager.csproj">
+      <Project>{3c3b102f-3680-48c3-af83-503012584747}</Project>
+      <Name>ZAJCZN.MIS.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZAJCZN.MIS.Service\ZAJCZN.MIS.Service.csproj">
+      <Project>{a8837fa6-e2e5-471a-804d-50c4f7c38d70}</Project>
+      <Name>ZAJCZN.MIS.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SysSet\ComponentEnums.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MySQL\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

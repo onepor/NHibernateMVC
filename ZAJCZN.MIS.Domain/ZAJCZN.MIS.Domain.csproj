@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{824B2A24-FA56-4281-877F-1D6B921F8F22}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZAJCZN.MIS.Domain</RootNamespace>
+    <AssemblyName>ZAJCZN.MIS.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\Libs\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\Libs\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="Contract\ContractInfo.cs" />
+    <Compile Include="Contract\ContractOrderCostInfo.cs" />
+    <Compile Include="Contract\ContractCabinetInfo.cs" />
+    <Compile Include="Contract\ContractDoorInfo.cs" />
+    <Compile Include="Contract\ContractHandWareDetail.cs" />
+    <Compile Include="Contract\ContractFiles.cs" />
+    <Compile Include="Contract\ContractCostInfo.cs" />
+    <Compile Include="Contract\ContractPayInfo.cs" />
+    <Compile Include="Equipment\PartsInfo.cs" />
+    <Compile Include="Equipment\PartsTypeInfo.cs" />
+    <Compile Include="MemberSiteMessage.cs" />
+    <Compile Include="SysSet\EmployeeInfo.cs" />
+    <Compile Include="Equipment\EquipmentInfo.cs" />
+    <Compile Include="Equipment\EquipmentTypeInfo.cs" />
+    <Compile Include="Inventory\GoodsAllocationBill.cs" />
+    <Compile Include="Inventory\GoodsAllocationBillDetail.cs" />
+    <Compile Include="Inventory\LossOrder.cs" />
+    <Compile Include="Inventory\LossOrderDetail.cs" />
+    <Compile Include="Inventory\ReceiveOrder.cs" />
+    <Compile Include="Inventory\ReceiveOrderDetail.cs" />
+    <Compile Include="Inventory\SalePayInfo.cs" />
+    <Compile Include="Inventory\WHStorageOrder.cs" />
+    <Compile Include="Inventory\WHOutBoundOrder.cs" />
+    <Compile Include="Inventory\WHOrderGoodsDetail.cs" />
+    <Compile Include="Inventory\WHGoodsDetail.cs" />
+    <Compile Include="Inventory\WHGoodsJournalAccount.cs" />
+    <Compile Include="Contract\ContractOrderInfo.cs" />
+    <Compile Include="Inventory\GoodsOrder.cs" />
+    <Compile Include="Inventory\GoodsOrderDetail.cs" />
+    <Compile Include="Contract\ContractOrderInfoDetail.cs" />
+    <Compile Include="Contract\ReceivablesInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockSet\GoodsType.cs" />
+    <Compile Include="StockSet\Goods.cs" />
+    <Compile Include="Inventory\WareHouse.cs" />
+    <Compile Include="SysSet\SupplierInfo.cs" />
+    <Compile Include="SysSet\EnumTypes.cs" />
+    <Compile Include="SysSet\SysParams.cs" />
+    <Compile Include="JQueryFeatureEntity.cs" />
+    <Compile Include="SysSet\RepairProjectInfo.cs" />
+    <Compile Include="System\VIPInfo.cs" />
+    <Compile Include="System\Configs.cs" />
+    <Compile Include="System\Depts.cs" />
+    <Compile Include="System\Menu.cs" />
+    <Compile Include="System\Power.cs" />
+    <Compile Include="System\Users.cs" />
+    <Compile Include="System\Roles.cs" />
+    <Compile Include="System\Online.cs" />
+    <Compile Include="System\RoleUsers.cs" />
+    <Compile Include="System\RolePowers.cs" />
+    <Compile Include="System\VIPPrepaid.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SysSet\Enums.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

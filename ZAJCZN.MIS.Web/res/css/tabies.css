@@ -1,0 +1,55 @@
+﻿.tabieFree {
+    width: 150px;
+    height: 150px;
+    background: url(/res/images/1.png)no-repeat;
+    color: white;
+    text-align: center;
+    background-position-y: 10px;
+    background-position-x: 25px;
+}
+
+.tabieOpen {
+    width: 150px;
+    height: 150px;
+    background: url(/res/images/2.png) no-repeat;
+    color: white;
+    text-align: center;
+    background-position-y: 10px;
+    background-position-x: 25px;
+}
+
+.tabieHe {
+    width: 150px;
+    height: 150px;
+    background: url(/res/images/3.png) no-repeat;
+    color: white;
+    text-align: center;
+    background-position-y: 10px;
+    background-position-x: 25px;
+}
+
+.tabieBC {
+    width: 150px;
+    height: 150px;
+    background: url(/res/images/4.png) no-repeat;
+    color: white;
+    text-align: center;
+    background-position-y: 10px;
+    background-position-x: 25px;
+}
+
+.tabieZC {
+    width: 150px;
+    height: 150px;
+    background: url(/res/images/5.png) no-repeat;
+    color: white;
+    text-align: center;
+    background-position-y: 10px;
+    background-position-x: 25px;
+}
+
+div #RegionPanel1_Region2_ContentPanel1_TabieS td:hover {
+    background: url(/res/images/orange.png) no-repeat;
+    background-position-y: 10px;
+    background-position-x: 25px;
+}

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{277DA573-F390-4C27-A07E-7432C112C54E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZAJCZN.MIS.Helpers</RootNamespace>
+    <AssemblyName>ZAJCZN.MIS.Helpers</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\Libs\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.5\lib\net20-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assistant.cs" />
+    <Compile Include="CommonMethod.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="DataCache.cs" />
+    <Compile Include="DateHelper.cs" />
+    <Compile Include="DBMYSQL\CommandInfo.cs" />
+    <Compile Include="DBMYSQL\DbHelperSQL.cs" />
+    <Compile Include="DBMYSQL\PubConstant.cs" />
+    <Compile Include="DEncrypt\DEncrypt.cs" />
+    <Compile Include="DEncrypt\DESEncrypt.cs" />
+    <Compile Include="DEncrypt\HashEncode.cs" />
+    <Compile Include="DEncrypt\RSACryption.cs" />
+    <Compile Include="EmailHelper.cs" />
+    <Compile Include="EncryptUtils.cs" />
+    <Compile Include="EnumTypes.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="FTPHelper.cs" />
+    <Compile Include="HttpPostGetHelper.cs" />
+    <Compile Include="HttpProc.cs" />
+    <Compile Include="INIFile.cs" />
+    <Compile Include="Log4Helper.cs" />
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="MessageBoxWeb.cs" />
+    <Compile Include="MySqlAutoBack.cs" />
+    <Compile Include="PageValidate.cs" />
+    <Compile Include="PasswordUtil.cs" />
+    <Compile Include="PicHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegexHelper.cs" />
+    <Compile Include="RMB.cs" />
+    <Compile Include="StringPlus.cs" />
+    <Compile Include="TimeParser.cs" />
+    <Compile Include="UrlOper.cs" />
+    <Compile Include="ValidationCode.cs" />
+    <Compile Include="XmlUnit.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZAJCZN.MIS.Core\ZAJCZN.MIS.Core.csproj">
+      <Project>{a8832831-5a05-42e7-8543-2de5bb4a17a6}</Project>
+      <Name>ZAJCZN.MIS.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZAJCZN.MIS.Domain\ZAJCZN.MIS.Domain.csproj">
+      <Project>{824b2a24-fa56-4281-877f-1d6b921f8f22}</Project>
+      <Name>ZAJCZN.MIS.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZAJCZN.MIS.Service\ZAJCZN.MIS.Service.csproj">
+      <Project>{a8837fa6-e2e5-471a-804d-50c4f7c38d70}</Project>
+      <Name>ZAJCZN.MIS.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
